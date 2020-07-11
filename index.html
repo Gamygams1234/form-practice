@@ -14,10 +14,14 @@
 
     <form action="index.html" method="POST">
       <h1>Sign Up!</h1>
+      <!-- we can get focus with the for as long as it matches -->
+      <label for="name">Name:</label>
       <input type="text" id="name" name="user_name" placeholder="Username" />
+      <label for="email">Email:</label>
       <input type="email" id="email" name="user_email" placeholder="E-mail" />
+      <label for="password">Password:</label>
       <input type="password" id="password" name="user_password" placeholder="Password" />
-
+      <label for="bio">Bio:</label>
       <textarea id="bio" name="user_bio" placeholder="Bio goes here"></textarea>
       <!-- there are two more types when it comes to button -->
       <!-- reset which resets all the data -->
