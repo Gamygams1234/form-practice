@@ -24,11 +24,36 @@
         <input type="email" id="email" name="user_email" placeholder="E-mail" />
         <label for="password">Password:</label>
         <input type="password" id="password" name="user_password" placeholder="Password" />
+        <label>Age:</label>
+        <!-- this is our radio that will ensure that we can select our options  -->
+        <!-- as long as we have the same name, it shoud pick form the option -->
+        <input type="radio" value="under_13" name="user_age" />
+        <label for="under_13" class="light">Under 13</label>
+
+        <br />
+        <input type="radio" value="over_13" name="user_age" />
+        <label for="over_13" class="light">13 or older</label>
       </fieldset>
       <fieldset>
         <legend><span class="number">2</span> Profile:</legend>
         <label for="bio">Bio:</label>
         <textarea id="bio" name="user_bio" placeholder="Bio goes here"></textarea>
+
+        <label for="job">Job Role:</label>
+        <!-- we have our select with our options grouped up -->
+        <select id="job" name="user_job">
+          <optgroup label="Web">
+            <option value="frontend_developer">Front End Developer</option>
+            <option value="php_developer">PHP Developer</option>
+            <option value="wordpress_developer">Wordpress Developer</option>
+          </optgroup>
+          <optgroup label="Mobile">
+            <option value="android_developer">Android Developer</option>
+            <option value="ios_developer">IOS Developer</option>
+            <option value="mobile_developer">Mobile Developer</option>
+          </optgroup>
+          <optgroup label="business"> <option value="business_developer">Business Developer</option></optgroup>
+        </select>
       </fieldset>
       <button type="submit">Sign Up</button>
     </form>
